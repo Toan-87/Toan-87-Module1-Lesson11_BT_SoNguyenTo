@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = prompt("nhâp số");
+    let isPrime = true;
+    if (number < 2) {
+        isPrime = false
+    } else {
+        for (i = 2; i < number; i++) {
+            if (number % i === 0) {
+                isPrime = false;
+                break;
+            }
+        }
+    }
+    let m =number+ (isPrime? " là số nguyên tố": " Không phải là số nguyên tố")
+    alert(m)
+</script>
+</body>
+</html>
